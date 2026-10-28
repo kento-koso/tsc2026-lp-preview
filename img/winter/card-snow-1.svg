@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 62" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".58" stop-color="#fff"/><stop offset=".83" stop-color="#f4f9fd"/><stop offset="1" stop-color="#deebf5"/></linearGradient>
+ <clipPath id="edge"><path d="M3 37C6 31 13 29 24 29C39 30 45 26 56 22C72 16 87 8 110 9C133 10 146 19 164 22C185 27 201 25 220 26C243 27 253 21 272 19C289 17 303 23 321 26C338 30 352 27 366 29C381 30 392 32 397 38C401 42 398 47 390 48C376 51 365 46 351 47C337 48 329 53 315 53C299 53 287 47 270 47C246 47 236 49 214 48C198 48 183 46 165 48C150 50 138 54 124 53C107 51 100 47 82 47C63 47 51 50 35 48C22 46 12 50 5 46C1 44 0 41 3 37Z"/></clipPath>
+ <filter id="powder" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" seed="5"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+<path d="M3 37C6 31 13 29 24 29C39 30 45 26 56 22C72 16 87 8 110 9C133 10 146 19 164 22C185 27 201 25 220 26C243 27 253 21 272 19C289 17 303 23 321 26C338 30 352 27 366 29C381 30 392 32 397 38C401 42 398 47 390 48C376 51 365 46 351 47C337 48 329 53 315 53C299 53 287 47 270 47C246 47 236 49 214 48C198 48 183 46 165 48C150 50 138 54 124 53C107 51 100 47 82 47C63 47 51 50 35 48C22 46 12 50 5 46C1 44 0 41 3 37Z" fill="url(#snow)"/>
+<g clip-path="url(#edge)"><path d="M0 35Q90 17 180 29T400 34" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/><rect width="400" height="62" filter="url(#powder)" opacity=".035"/></g>
+</svg>

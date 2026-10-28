@@ -1,0 +1,130 @@
+{
+  "img/design/snow-christmas-logo.png": {
+    "path": "img/optimized/design/snow-christmas-logo.07411edf8a69.webp",
+    "sourceBytes": 585499,
+    "outputBytes": 428830,
+    "width": 1400,
+    "height": 833,
+    "mode": "lossless"
+  },
+  "img/logo/nomura_re.png": {
+    "path": "img/optimized/logo/nomura_re.d0996feacfbd.webp",
+    "sourceBytes": 21070,
+    "outputBytes": 8126,
+    "width": 390,
+    "height": 233,
+    "mode": "lossless"
+  },
+  "img/m/fund.jpg": {
+    "path": "img/optimized/m/fund.62b3aeca9d38.webp",
+    "sourceBytes": 205424,
+    "outputBytes": 136288,
+    "width": 1600,
+    "height": 1543,
+    "mode": "quality-88"
+  },
+  "img/m/news_tree.jpg": {
+    "path": "img/optimized/m/news_tree.84ccb20a0558.webp",
+    "sourceBytes": 227021,
+    "outputBytes": 189438,
+    "width": 900,
+    "height": 900,
+    "mode": "quality-88"
+  },
+  "img/m/p1.jpg": {
+    "path": "img/optimized/m/p1.5bf4da16ebc5.webp",
+    "sourceBytes": 172332,
+    "outputBytes": 130858,
+    "width": 1440,
+    "height": 1620,
+    "mode": "quality-88"
+  },
+  "img/m/p5_ws.jpg": {
+    "path": "img/optimized/m/p5_ws.c80f08042d21.webp",
+    "sourceBytes": 130062,
+    "outputBytes": 79300,
+    "width": 900,
+    "height": 900,
+    "mode": "quality-88"
+  },
+  "img/m/p6.jpg": {
+    "path": "img/optimized/m/p6.69de053f8a5f.webp",
+    "sourceBytes": 214343,
+    "outputBytes": 169802,
+    "width": 1366,
+    "height": 1536,
+    "mode": "quality-88"
+  },
+  "img/m/shops_market.jpg": {
+    "path": "img/optimized/m/shops_market.ef33b5a90bd6.webp",
+    "sourceBytes": 192632,
+    "outputBytes": 137792,
+    "width": 900,
+    "height": 900,
+    "mode": "quality-88"
+  },
+  "img/m/venue_map.png": {
+    "path": "img/optimized/m/venue_map.abce6eb31f1d.webp",
+    "sourceBytes": 202645,
+    "outputBytes": 109026,
+    "width": 975,
+    "height": 815,
+    "mode": "lossless"
+  },
+  "img/motion/marc-crystals-mobile.png": {
+    "path": "img/optimized/motion/marc-crystals-mobile.7817ab1e4dd0.webp",
+    "sourceBytes": 149919,
+    "outputBytes": 84190,
+    "width": 1023,
+    "height": 1440,
+    "mode": "lossless"
+  },
+  "img/motion/marc-crystals.png": {
+    "path": "img/optimized/motion/marc-crystals.15c4f36f100a.webp",
+    "sourceBytes": 87707,
+    "outputBytes": 26028,
+    "width": 1920,
+    "height": 1080,
+    "mode": "lossless"
+  },
+  "img/motion/marc-scene-mobile.jpg": {
+    "path": "img/optimized/motion/marc-scene-mobile.c93bfc0d2096.webp",
+    "sourceBytes": 455859,
+    "outputBytes": 215108,
+    "width": 1023,
+    "height": 1440,
+    "mode": "quality-88"
+  },
+  "img/motion/marc-scene.jpg": {
+    "path": "img/optimized/motion/marc-scene.712f6633fe08.webp",
+    "sourceBytes": 622281,
+    "outputBytes": 305626,
+    "width": 1920,
+    "height": 1080,
+    "mode": "quality-88"
+  },
+  "img/ogp.png": {
+    "path": "img/optimized/ogp.501588272e2b.webp",
+    "sourceBytes": 1248499,
+    "outputBytes": 803608,
+    "width": 1200,
+    "height": 630,
+    "mode": "lossless"
+  },
+  "img/talk/2025_talk.jpg": {
+    "path": "img/optimized/talk/2025_talk.bba82f3d51f1.webp",
+    "sourceBytes": 203855,
+    "outputBytes": 163522,
+    "width": 1400,
+    "height": 933,
+    "mode": "quality-88"
+  },
+  "img/talk/kimura_official.jpg": {
+    "path": "img/optimized/talk/kimura_official.29cc4657d092.webp",
+    "sourceBytes": 81488,
+    "outputBytes": 41170,
+    "width": 1000,
+    "height": 1000,
+    "mode": "quality-88"
+  }
+}

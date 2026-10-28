@@ -1,0 +1,145 @@
+/* お礼ページだけの演出：夜空に雪が降り、画面の下に100kgぶん積もる */
+.gift {
+  position: relative;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(to bottom, #0a1b33 0%, #0e2440 45%, #1a4472 100%);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.gift canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.gift__in {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 14px rgba(10, 27, 51, 0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(76px, 11vh, 110px) var(--gutter) 0;
+  text-align: center;
+  pointer-events: none;
+}
+.gift__label {
+  font-family: var(--f-en);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.gift__kg {
+  margin-top: 10px;
+  font-family: var(--f-en);
+  font-weight: 300;
+  line-height: 1;
+  font-size: min(17vw, 14vh, 132px);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.gift__kg small {
+  font-size: 0.32em;
+  font-weight: 500;
+  margin-left: 0.12em;
+  letter-spacing: 0;
+}
+.gift__now {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.75;
+  transition: opacity 0.8s;
+}
+.gift__msg {
+  margin-top: 4px;
+  font-size: clamp(18px, 4.4vw, 26px);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 1.4s,
+    transform 1.4s;
+}
+.gift__sub {
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 1.4s 0.6s;
+}
+.gift.is-done .gift__now {
+  opacity: 0;
+}
+.gift.is-done .gift__msg {
+  opacity: 1;
+  transform: none;
+}
+.gift.is-done .gift__sub {
+  opacity: 0.85;
+}
+.gift__more {
+  margin-top: 18px;
+  opacity: 0;
+  transition: opacity 1.4s 1.2s;
+  pointer-events: none;
+}
+.gift__more p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.gift__more button {
+  margin-top: 8px;
+  font: inherit;
+  font-family: var(--f-en);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: rgba(10, 27, 51, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  padding: 10px 24px;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.gift__more button:active {
+  transform: scale(0.96);
+}
+.gift.is-done .gift__more {
+  opacity: 1;
+  pointer-events: auto;
+}
+.thx {
+  padding: var(--sec-y) 0;
+}
+.thx__body {
+  max-width: 640px;
+}
+.thx__body .body + .body {
+  margin-top: 1em;
+}
+.thx__acts {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.thx__body .cap {
+  margin-top: 24px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gift__msg,
+  .gift__sub,
+  .gift__more {
+    transition: none;
+  }
+}

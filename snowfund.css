@@ -1,0 +1,606 @@
+/* Snow Fund shares the homepage's paper, midnight blue, and winter photography. */
+.winter-fund {
+  background: #0b2744;
+  color: #173d5c;
+  overflow-x: clip;
+}
+.winter-fund .label {
+  font: 10px var(--f-en);
+  letter-spacing: 0.18em;
+}
+.winter-fund .wrap {
+  max-width: 1180px;
+}
+.fund-cover {
+  position: relative;
+  isolation: isolate;
+  background: radial-gradient(ellipse at 50% 8%, #365d7c90, transparent 55%), #0b2744;
+  color: #f4f9fc;
+  padding: 30px 0 125px;
+}
+.fund-cover:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 58px;
+  background: url('img/winter/snow-bank.svg') center bottom/100% 100% no-repeat;
+  pointer-events: none;
+}
+.fund-cover .crumb {
+  font-size: 10px;
+  color: #b1cada;
+  margin: 0 0 32px;
+}
+.fund-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+.fund-cover .label {
+  color: #b8d0e0;
+}
+.fund-display {
+  font: 500 clamp(62px, 7vw, 94px)/1.05 var(--serif);
+  letter-spacing: -0.035em;
+  margin: 20px 0;
+}
+.fund-heading h1 {
+  font: 500 18px/1.8 var(--jp-serif);
+  letter-spacing: 0.12em;
+}
+.winter-fund .fundhero {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 85px;
+  align-items: center;
+}
+.fund-collage {
+  position: relative;
+  padding: 0 25px 45px 0;
+}
+.fund-photo {
+  position: relative;
+  transform: rotate(-5deg);
+  background: #fffefb;
+  padding: 13px 13px 0;
+  box-shadow: 0 22px 48px #020f2945;
+}
+.fund-photo:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -12px;
+  left: calc(50% - 45px);
+  width: 90px;
+  height: 27px;
+  background: #cfdfedc7;
+  transform: rotate(8deg);
+  clip-path: polygon(0 5%, 100% 0, 96% 30%, 100% 60%, 95% 100%, 0 95%, 4% 60%);
+}
+.winter-fund .fundhero img {
+  border-radius: 0;
+  height: auto;
+  aspect-ratio: 1.02;
+  object-fit: cover;
+  object-position: 50% 55%;
+  display: block;
+}
+.fund-photo figcaption {
+  font: italic 19px/1.3 var(--serif);
+  color: #55758c;
+  text-align: center;
+  padding: 19px 0 23px;
+}
+.fund-goal-note {
+  position: absolute;
+  right: -25px;
+  bottom: 0;
+  min-width: 185px;
+  padding: 22px 24px 20px;
+  background: #dcecf5 url('img/winter/paper-grain.svg');
+  color: #174767;
+  transform: rotate(5deg);
+  box-shadow: 3px 8px 18px #04182f38;
+  text-align: center;
+}
+.fund-goal-label {
+  font: 9px var(--f-en);
+  letter-spacing: 0.2em;
+}
+.fund-goal-caption {
+  font: 7px var(--f-en);
+  letter-spacing: 0.08em;
+}
+.winter-fund .fund__goal {
+  justify-content: center;
+  gap: 7px;
+  margin: 9px 0 12px;
+}
+.winter-fund .fund__goal span {
+  background: none;
+  color: #436780;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 500;
+}
+.winter-fund .fund__goal b {
+  font: 500 70px/0.95 var(--serif);
+  color: #174767;
+}
+.winter-fund .fund__goal small {
+  font: 24px var(--serif);
+  color: #174767;
+}
+.fund-story .h-sec {
+  font: 500 clamp(21px, 2.2vw, 30px)/1.9 var(--jp-serif);
+  letter-spacing: 0.03em;
+}
+.fund-story .body {
+  font-size: 13px;
+  line-height: 2.25;
+  color: #d6e4ed;
+  margin-top: 22px;
+}
+.fund-story .fund-names-note {
+  font-size: 11px;
+  margin-top: 20px;
+}
+.fund-story .btn {
+  margin-top: 27px;
+  background: #f4f9fc;
+  color: #173d5c;
+  border-color: #c5dcea;
+  width: 100%;
+  max-width: 370px;
+  min-height: 58px;
+  font-size: 13px;
+  box-shadow: 0 6px 22px #01162930;
+}
+.fund-story .btn:after,
+.fund-flow-action .btn:after {
+  content: '↗';
+  font-size: 23px;
+  font-weight: 400;
+  margin-left: auto;
+}
+.fund-story .btn {
+  justify-content: space-between;
+}
+.fund-branch {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: 270px;
+  height: 530px;
+  background: url('img/motion/foreground-branches.webp') center/contain no-repeat;
+  opacity: 0.7;
+}
+.fund-branch--left {
+  top: 130px;
+  left: -180px;
+  transform: rotate(17deg);
+}
+.fund-branch--right {
+  bottom: 0;
+  right: -185px;
+  transform: scaleX(-1) rotate(15deg);
+}
+.fund-impact {
+  padding: 75px 0 85px;
+  background: radial-gradient(ellipse at 50% 15%, #fff, #edf5fa);
+  position: relative;
+}
+.fund-impact-heading {
+  position: relative;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.fund-impact-display {
+  font: 500 64px/1.1 var(--serif);
+  letter-spacing: -0.02em;
+}
+.winter-fund .fund__pts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  max-width: 920px;
+  margin: 0 auto;
+  align-items: center;
+}
+.winter-fund .fund__pts > div {
+  border: 0;
+  padding: 32px 38px;
+  background: #fffefb url('img/winter/paper-grain.svg');
+  box-shadow: 0 9px 30px #173d5c0b;
+}
+.winter-fund .fund__pts > div:first-child {
+  transform: rotate(-2deg);
+}
+.winter-fund .fund__pts > div:last-child {
+  transform: rotate(2deg);
+  background: #e0edf6;
+  padding: 35px 32px;
+}
+.fund-unit {
+  display: block;
+  font: 500 17px/1.6 var(--jp-serif);
+}
+.fund-weight {
+  display: block;
+  font: 500 17px/1.1 var(--jp-serif);
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.fund-weight strong {
+  font: 500 80px/0.95 var(--serif);
+  margin: 0 5px;
+}
+.winter-fund .fund__pts h3 {
+  font: 500 20px/1.8 var(--jp-serif);
+}
+.winter-fund .fund__pts p {
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 18px;
+  color: #476b85;
+}
+.winter-fund .fund-impact .cap {
+  max-width: 920px;
+  margin: 32px auto 0;
+  color: #6a8193;
+  font-size: 10px;
+  line-height: 1.9;
+}
+
+.fund-flow {
+  position: relative;
+  padding: 85px 0 100px;
+  background: linear-gradient(170deg, #edf5fa, #e5f0f7);
+  isolation: isolate;
+}
+.fund-flow:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('img/winter/paper-grain.svg');
+  opacity: 0.5;
+  pointer-events: none;
+}
+.fund-flow-heading {
+  text-align: center;
+}
+.fund-section-display {
+  font: 500 58px/1.1 var(--serif);
+  letter-spacing: -0.025em;
+}
+.fund-flow-heading .h-sec {
+  font: 500 18px/1.7 var(--jp-serif);
+  margin-top: 19px;
+}
+.fund-flow-heading .lead {
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 16px;
+  color: #607f95;
+}
+.winter-fund .flow {
+  position: relative;
+  gap: 16px;
+  border: 0;
+  margin-top: 55px;
+  align-items: start;
+  counter-reset: steps;
+}
+.winter-fund .flow:before {
+  content: '';
+  position: absolute;
+  top: 55px;
+  left: 5%;
+  right: 5%;
+  height: 80px;
+  border-top: 1px dashed #8faec2;
+  transform: rotate(3deg);
+}
+.winter-fund .flow li {
+  position: relative;
+  padding: 24px 19px 28px;
+  border: 0;
+  background: #fffefb;
+  box-shadow: 3px 9px 22px #294c6012;
+  transform: rotate(-2deg);
+  min-height: 280px;
+  margin: 0;
+}
+.winter-fund .flow li:nth-child(2n) {
+  margin-top: 28px;
+  transform: rotate(2deg);
+}
+.winter-fund .flow li:before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: calc(50% - 28px);
+  width: 56px;
+  height: 18px;
+  background: #bdd3e596;
+  transform: rotate(-7deg);
+}
+.winter-fund .flow span {
+  font: italic 36px/1 var(--serif);
+  color: #648aa4;
+  justify-content: space-between;
+  gap: 3px;
+}
+.winter-fund .flow span small {
+  font: 9px var(--f-en);
+  color: #6f899b;
+}
+.winter-fund .flow b {
+  font: 500 14px/1.9 var(--jp-serif);
+  margin-top: 21px;
+}
+.winter-fund .flow p {
+  font-size: 11px;
+  line-height: 2;
+  margin-top: 12px;
+  color: #5a778c;
+}
+.winter-fund .fund-flow > .wrap > .cap {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.9;
+  margin-top: 35px;
+}
+.fund-flow-action {
+  text-align: center;
+  margin-top: 34px;
+}
+.fund-flow-action .btn {
+  width: min(100%, 340px);
+  min-height: 56px;
+  font-size: 13px;
+  justify-content: space-between;
+}
+.winter-fund .page-snow {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 36;
+  pointer-events: none;
+}
+.winter-fund .fund-motion {
+  position: fixed;
+  z-index: 60;
+  cursor: pointer;
+  color: #ecf6fc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 1100px) {
+  .winter-fund .fundhero {
+    gap: 46px;
+  }
+  .fund-cover {
+    padding-bottom: 100px;
+  }
+  .fund-story .h-sec {
+    font-size: 23px;
+  }
+  .fund-story .body {
+    font-size: 12px;
+  }
+  .fund-goal-note {
+    right: -10px;
+    min-width: 150px;
+    padding: 17px;
+  }
+  .fund-goal-caption {
+    font-size: 6px;
+  }
+  .winter-fund .flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+  }
+  .winter-fund .flow li {
+    min-height: 255px;
+  }
+  .winter-fund .flow li:nth-child(2n) {
+    margin-top: 0;
+  }
+  .winter-fund .fund__pts {
+    gap: 24px;
+  }
+  .winter-fund .fund__pts > div {
+    padding: 28px;
+  }
+  .winter-fund .fund-motion {
+    font-size: 0;
+  }
+}
+@media (max-width: 760px) {
+  .fund-cover {
+    padding-top: 22px;
+    padding-bottom: 85px;
+  }
+  .fund-cover .crumb {
+    font-size: 9px;
+    margin-bottom: 32px;
+  }
+  .fund-heading {
+    margin-bottom: 40px;
+  }
+  .fund-display {
+    font-size: 61px;
+    margin: 17px 0;
+  }
+  .fund-heading h1 {
+    font-size: 15px;
+  }
+  .winter-fund .label {
+    font-size: 8px;
+  }
+  .winter-fund .fundhero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    max-width: 480px;
+    margin: auto;
+  }
+  .fund-collage {
+    padding: 0 24px 48px 8px;
+  }
+  .fund-photo {
+    padding: 9px 9px 0;
+    transform: rotate(-4deg);
+  }
+  .fund-photo figcaption {
+    font-size: 15px;
+    padding: 15px 0 18px;
+  }
+  .fund-goal-note {
+    right: 0;
+    bottom: 0;
+    min-width: 136px;
+    padding: 15px;
+  }
+  .fund-goal-label {
+    font-size: 7px;
+  }
+  .winter-fund .fund__goal b {
+    font-size: 56px;
+  }
+  .winter-fund .fund__goal {
+    margin: 8px 0;
+  }
+  .fund-goal-caption {
+    font-size: 5px;
+  }
+  .fund-story .h-sec {
+    font-size: clamp(20px, 5.5vw, 25px);
+    line-height: 1.9;
+  }
+  .fund-story .body {
+    font-size: 13px;
+    line-height: 2.2;
+  }
+  .fund-story .fund-names-note {
+    font-size: 11px;
+  }
+  .fund-story .btn {
+    max-width: none;
+    margin-top: 23px;
+    font-size: 12px;
+    min-height: 55px;
+  }
+  .fund-cover:after {
+    height: 35px;
+  }
+  .fund-branch {
+    opacity: 0.45;
+  }
+  .fund-branch--left {
+    top: 130px;
+    left: -205px;
+  }
+  .fund-branch--right {
+    right: -210px;
+  }
+  .fund-impact {
+    padding: 55px 0 60px;
+  }
+  .fund-impact-heading {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .fund-impact-display {
+    font-size: 49px;
+  }
+  .winter-fund .fund__pts {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 460px;
+  }
+  .winter-fund .fund__pts > div {
+    padding: 26px;
+  }
+  .winter-fund .fund__pts > div:last-child {
+    padding: 28px;
+  }
+  .fund-weight strong {
+    font-size: 76px;
+  }
+  .winter-fund .fund__pts h3 {
+    font-size: 18px;
+  }
+  .winter-fund .fund__pts p {
+    font-size: 12px;
+  }
+  .winter-fund .fund-impact .cap {
+    font-size: 10px;
+    margin-top: 27px;
+  }
+  .fund-flow {
+    padding: 55px 0 65px;
+  }
+  .fund-section-display {
+    font-size: 47px;
+  }
+  .fund-flow-heading .h-sec {
+    font-size: 17px;
+  }
+  .fund-flow-heading .lead {
+    font-size: 11px;
+  }
+  .winter-fund .flow {
+    grid-template-columns: 1fr;
+    gap: 21px;
+    margin: 36px 8px 0;
+  }
+  .winter-fund .flow:before {
+    inset: 0 auto 0 25px;
+    width: 0;
+    height: auto;
+    border-top: 0;
+    border-left: 1px dashed #8faec2;
+    transform: none;
+  }
+  .winter-fund .flow li {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 43px minmax(0, 1fr);
+    gap: 0 16px;
+    padding: 24px 21px;
+    transform: rotate(-1deg);
+  }
+  .winter-fund .flow li:nth-child(2n) {
+    transform: rotate(1deg);
+  }
+  .winter-fund .flow span {
+    grid-row: 1/3;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 9px;
+    align-items: flex-start;
+    font-size: 32px;
+  }
+  .winter-fund .flow span small {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+  .winter-fund .flow b {
+    margin: 0;
+    font-size: 14px;
+  }
+  .winter-fund .flow p {
+    grid-column: 2;
+    font-size: 12px;
+    margin-top: 9px;
+  }
+  .fund-flow-action .btn {
+    width: 100%;
+    max-width: 370px;
+  }
+}

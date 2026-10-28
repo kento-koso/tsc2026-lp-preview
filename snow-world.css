@@ -1,0 +1,581 @@
+/* Snow continues beyond the key visual: banks, frosted edges and a winter canopy. */
+.page-snow {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 36;
+}
+.snow-lp .intro,
+.snow-lp .plan,
+.snow-lp .ft {
+  background-color: #edf5fa;
+  background-image:
+    radial-gradient(ellipse at 50% 20%, #fff 0, transparent 68%),
+    radial-gradient(ellipse at 0 80%, #c9dfef80, transparent 55%);
+}
+.snow-lp .intro {
+  padding-top: 95px;
+  padding-bottom: 100px;
+  isolation: isolate;
+}
+.snow-lp .intro > .intro-layout,
+.snow-lp .intro > .intro-foot {
+  position: relative;
+  z-index: 2;
+}
+.snow-lp .intro-foot {
+  margin-top: 65px;
+}
+.winter-ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 125px;
+  background: url('img/optimized/motion/marc-scene.712f6633fe08.webp') center bottom/100% auto;
+  filter: brightness(1.65) saturate(0.35);
+  mask-image: linear-gradient(transparent, #000 80%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+.winter-bank {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  background: url('img/winter/snow-bank.svg') center bottom/100% 100% no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+.winter-branch {
+  position: absolute;
+  pointer-events: none;
+  width: 300px;
+  height: 570px;
+  background: url('img/motion/foreground-branches.webp') center/contain no-repeat;
+  z-index: 0;
+  opacity: 0.5;
+}
+.winter-branch--left {
+  left: -195px;
+  top: 125px;
+  transform: rotate(24deg);
+}
+.winter-branch--right {
+  right: -185px;
+  bottom: 40px;
+  transform: scaleX(-1) rotate(20deg);
+}
+.snow-lp .intro .winter-branch {
+  filter: brightness(1.4) saturate(0.35);
+  opacity: 0.6;
+}
+.snow-lp .decor-intro {
+  width: 210px;
+  right: -75px;
+  top: -20px;
+}
+.snow-lp .polaroid:after,
+.snow-lp .way:after,
+.blank-card:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -19px;
+  height: 42px;
+  pointer-events: none;
+  background: url('img/winter/snow-cap.svg?v=2') center/100% 100% no-repeat;
+  filter: drop-shadow(0 5px 3px #26486325);
+  z-index: 4;
+}
+.snow-lp .polaroid:before,
+.snow-lp .way:before {
+  display: none;
+}
+.snow-lp .enjoy {
+  background-color: #0b2744;
+  background-image:
+    radial-gradient(ellipse at 50% 3%, #2b587799, transparent 35%),
+    radial-gradient(ellipse at 0 50%, #224b6a77, transparent 40%);
+  padding-top: 195px;
+  isolation: isolate;
+}
+.snow-lp .enjoy:before {
+  height: 65px;
+  clip-path: none;
+  background: url('img/winter/snow-bank.svg') center/100% 100% no-repeat;
+  transform: rotate(180deg);
+  top: -1px;
+}
+.winter-lights {
+  position: absolute;
+  inset: 45px 0 auto;
+  height: 140px;
+  background: url('img/winter/fairy-lights.svg') center top/100% auto no-repeat;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.95;
+}
+.snow-lp .program-heading,
+.snow-lp .program-grid {
+  position: relative;
+  z-index: 2;
+}
+.snow-lp .enjoy .winter-branch {
+  opacity: 0.9;
+  filter: brightness(0.9);
+  width: 340px;
+  height: 680px;
+  top: 105px;
+}
+.snow-lp .enjoy .winter-branch--left {
+  left: -210px;
+}
+.snow-lp .enjoy .winter-branch--right {
+  right: -205px;
+  top: 280px;
+}
+.snow-lp .decor-program {
+  width: 215px;
+  left: 5%;
+  top: 165px;
+}
+.snow-lp .way {
+  box-shadow: 0 14px 40px #020f294d;
+}
+.snow-lp .way__no {
+  border: 0;
+  padding-bottom: 0;
+}
+.snow-lp .plan {
+  padding-top: 160px;
+  padding-bottom: 150px;
+  isolation: isolate;
+}
+.snow-lp .plan:before {
+  height: 60px;
+  background: url('img/winter/snow-bank.svg') center/100% 100% no-repeat;
+  clip-path: none;
+  transform: rotate(180deg);
+  opacity: 0.8;
+}
+.snow-lp .plan__in {
+  position: relative;
+  z-index: 2;
+}
+.snow-lp .decor-snowman {
+  width: 215px;
+}
+.snow-lp .sponsors {
+  background: #f7fbff;
+}
+.snow-lp .venue {
+  position: relative;
+  background: #deedf6;
+  isolation: isolate;
+}
+.snow-lp .venue:before {
+  content: '';
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: -80px;
+  top: 25px;
+  background: url('img/winter/crystal.svg') center/contain no-repeat;
+  opacity: 0.65;
+  z-index: -1;
+  transform: rotate(15deg);
+}
+.snow-lp .faq-sec {
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 140px;
+  isolation: isolate;
+  background: #102f4d;
+}
+.snow-lp .faq-sec:before {
+  height: 60px;
+  background: url('img/winter/snow-bank.svg') center/100% 100% no-repeat;
+  clip-path: none;
+  transform: rotate(180deg);
+}
+.snow-lp .faq {
+  position: relative;
+  z-index: 2;
+}
+.snow-lp .faq-sec .winter-branch--left {
+  opacity: 0.75;
+  top: 55px;
+}
+.snow-lp .faq-sec .winter-branch--right {
+  opacity: 0.75;
+  bottom: 40px;
+}
+.snow-lp .footer-invitation {
+  padding-top: 110px;
+  padding-bottom: 95px;
+  isolation: isolate;
+  background: radial-gradient(ellipse at 50% 0, #dcecf7, transparent 75%);
+}
+.snow-lp .footer-invitation:before,
+.snow-lp .footer-invitation:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: 160px;
+  height: 160px;
+  background: url('img/winter/crystal.svg') center/contain no-repeat;
+}
+.snow-lp .footer-invitation:before {
+  left: 6%;
+  top: 30px;
+  transform: rotate(-12deg);
+}
+.snow-lp .footer-invitation:after {
+  right: 8%;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(17deg);
+}
+.snow-lp .ft .label {
+  color: #476f8b;
+}
+.snow-lp .ft__grid {
+  position: relative;
+}
+/* Empty content slots still belong to the snowy landscape. */
+.winter-shops {
+  --c-ink: #193e5c;
+  --c-sub: #5f7b91;
+  background: #eaf3f9;
+  color: var(--c-ink);
+}
+.winter-shops .subhead {
+  position: relative;
+  border: 0;
+  background: radial-gradient(ellipse at 60% 0, #fff, #dbeaf5);
+  overflow: hidden;
+}
+.winter-shops .subhead:after {
+  content: '';
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background: url('img/winter/crystal.svg') center/contain no-repeat;
+  right: -60px;
+  top: 20px;
+  opacity: 0.45;
+}
+.winter-shops .subhead > .wrap {
+  position: relative;
+  z-index: 1;
+}
+.winter-shops .subbody {
+  position: relative;
+  background: radial-gradient(ellipse at 50% 20%, #fff8, transparent 70%);
+}
+.winter-shops .subbody > .wrap {
+  position: relative;
+  z-index: 2;
+}
+.blank-card {
+  position: relative;
+  box-shadow: 0 12px 25px #3c6e9120;
+  background: #f9fcff;
+}
+.blank-photo {
+  background: radial-gradient(ellipse at 50% 20%, #eff8ff, #cee2f0);
+}
+.blank-photo:before {
+  inset: auto 0 -1px;
+  width: 100%;
+  height: 55px;
+  border: 0;
+  background: url('img/winter/snow-bank.svg') center/100% 100%;
+  opacity: 1;
+}
+.blank-photo:after {
+  display: none;
+}
+.blank-photo .blank-mark {
+  width: 65px;
+  height: 65px;
+  font-size: 0;
+  background: url('img/winter/crystal.svg') center/contain no-repeat;
+  filter: drop-shadow(0 3px 2px #fff);
+}
+.blank-photo .blank-caption {
+  position: relative;
+  z-index: 1;
+}
+.blank-panel {
+  background: linear-gradient(140deg, #e0edf6, #f2f8fc);
+  box-shadow: inset 0 1px #fff;
+}
+@media (max-width: 1100px) {
+  .snow-lp .decor-program {
+    left: 0;
+    width: 150px;
+    top: 175px;
+  }
+  .snow-lp .decor-intro {
+    right: -30px;
+    width: 150px;
+  }
+  .winter-branch {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 760px) {
+  .snow-lp .intro {
+    padding-top: 70px;
+    padding-bottom: 85px;
+  }
+  .snow-lp .intro-foot {
+    margin-top: 50px;
+  }
+  .winter-ground {
+    height: 75px;
+    background-size: auto 400px;
+  }
+  .winter-bank {
+    height: 65px;
+  }
+  .winter-branch {
+    width: 210px;
+    height: 420px;
+  }
+  .winter-branch--left {
+    left: -160px;
+    top: 50px;
+  }
+  .winter-branch--right {
+    right: -155px;
+    bottom: 35px;
+  }
+  .snow-lp .decor-intro {
+    width: 130px;
+    right: -30px;
+    top: -15px;
+  }
+  .snow-lp .enjoy {
+    padding-top: 145px;
+  }
+  .snow-lp .enjoy:before {
+    height: 38px;
+  }
+  .winter-lights {
+    top: 25px;
+    height: 100px;
+    background-size: auto 95px;
+  }
+  .snow-lp .enjoy .winter-branch {
+    width: 230px;
+    height: 450px;
+    opacity: 0.7;
+  }
+  .snow-lp .enjoy .winter-branch--left {
+    left: -180px;
+    top: 240px;
+  }
+  .snow-lp .enjoy .winter-branch--right {
+    right: -180px;
+    top: 60px;
+  }
+  .snow-lp .decor-program {
+    width: 95px;
+    left: auto;
+    right: 8px;
+    top: 53px;
+  }
+  .snow-lp .polaroid:after,
+  .snow-lp .way:after,
+  .blank-card:before {
+    height: 32px;
+    top: -14px;
+  }
+  .snow-lp .plan {
+    padding-top: 105px;
+    padding-bottom: 110px;
+  }
+  .snow-lp .plan:before {
+    height: 35px;
+  }
+  .snow-lp .decor-snowman {
+    width: 175px;
+  }
+  .snow-lp .faq-sec {
+    padding-top: 95px;
+    padding-bottom: 105px;
+  }
+  .snow-lp .faq-sec:before {
+    height: 35px;
+  }
+  .snow-lp .faq-sec .winter-branch {
+    opacity: 0.3;
+  }
+  .snow-lp .footer-invitation {
+    padding: 85px 15px 70px;
+  }
+  .snow-lp .footer-invitation:before {
+    width: 85px;
+    height: 85px;
+    left: -18px;
+    top: 5px;
+  }
+  .snow-lp .footer-invitation:after {
+    width: 65px;
+    height: 65px;
+    right: 5px;
+    bottom: 15px;
+  }
+  .winter-shops .subhead:after {
+    width: 160px;
+    height: 160px;
+    right: -60px;
+    opacity: 0.4;
+  }
+}
+
+/* Frost collects at the edges of the image, without a separate snow cap. */
+.winter-shops .blank-card {
+  background: #f9fcff;
+  box-shadow:
+    0 8px 25px #3c6e9114,
+    inset 0 0 0 1px #fff9;
+}
+.winter-shops .blank-card:before {
+  content: none;
+}
+.winter-shops .blank-photo {
+  background: radial-gradient(ellipse at 46% 35%, #eef7fc 0%, #d3e5f1 75%, #c7ddea 100%);
+}
+.winter-shops .blank-photo:before {
+  inset: auto 0 -1px;
+  width: 100%;
+  height: 55px;
+  transform: none;
+  background: url('img/winter/card-drift.svg') center/100% 100% no-repeat;
+  border: 0;
+}
+.winter-shops .blank-card:nth-child(2n) .blank-photo:before {
+  transform: scaleX(-1);
+}
+.winter-shops .blank-photo:after {
+  display: block;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: 0.85;
+  pointer-events: none;
+  background: url('img/winter/card-frost.svg') center/100% 100% no-repeat;
+}
+.winter-shops .blank-card:nth-child(2n) .blank-photo:after {
+  transform: scaleX(-1);
+}
+.winter-shops .blank-card:nth-child(3n) .blank-photo:after {
+  transform: rotate(180deg);
+  opacity: 0.65;
+}
+.winter-shops .blank-photo .blank-mark {
+  opacity: 0.7;
+}
+.winter-shops .blank-grid {
+  row-gap: 32px;
+}
+
+@media (max-width: 760px) {
+  .winter-shops .blank-photo:before {
+    height: 46px;
+  }
+}
+
+/* Each bulb breathes independently; the cable stays still. */
+.winter-lights--animated {
+  background: none;
+}
+.winter-lights--animated svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.garland-halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: garland-glow calc(var(--pulse, 4s) * 2) ease-in-out var(--phase, 0s) infinite;
+}
+.garland-bulb {
+  animation: garland-bulb calc(var(--pulse, 4s) * 2) ease-in-out var(--phase, 0s) infinite;
+}
+@keyframes garland-glow {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.65);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.55);
+  }
+}
+@keyframes garland-bulb {
+  0%,
+  100% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.all-motion-paused .garland-halo,
+.all-motion-paused .garland-bulb {
+  animation-play-state: paused;
+}
+@media (max-width: 760px) {
+  .winter-lights--animated svg {
+    width: 1013.333px;
+    max-width: none;
+    height: 95px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .garland-halo,
+  .garland-bulb {
+    animation: none;
+  }
+  .garland-halo {
+    opacity: 0.65;
+  }
+}
+
+/* Carry the snowy ribbon into the introduction without a horizontal color seam. */
+.snow-lp .event-ribbon {
+  background: linear-gradient(180deg, #f5f6f2 0%, #f3f6f5 35%, #edf5fa 100%);
+  border: 0;
+}
+.snow-lp .intro:before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 180px;
+  background: linear-gradient(180deg, #edf5fa 0%, #edf5facc 30%, #edf5fa00 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 760px) {
+  .snow-lp .intro:before {
+    height: 120px;
+  }
+}

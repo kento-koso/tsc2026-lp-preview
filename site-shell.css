@@ -1,0 +1,212 @@
+/* Shared page chrome; the homepage alone animates its masthead from the hero. */
+.site-shell {
+  --button-radius: 3px;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --jp-serif: 'Noto Serif JP', serif;
+}
+.site-shell:not(.snow-lp) {
+  --masthead-progress: 1;
+}
+.site-shell [hidden] {
+  display: none !important;
+}
+.site-shell :focus-visible {
+  outline: 3px solid #82b8d5;
+  outline-offset: 6px;
+}
+.skip-link {
+  position: fixed;
+  left: 20px;
+  top: -100px;
+  z-index: 100;
+  background: white;
+  color: #163b5b;
+  padding: 12px 24px;
+}
+.skip-link:focus {
+  top: 16px;
+}
+.site-shell:not(.snow-lp) > main {
+  padding-top: var(--masthead-height);
+}
+.site-shell:not(.snow-lp) .subhead {
+  padding-top: 64px;
+}
+
+/* One footer, including the same contact placeholder, on every page. */
+.site-shell .ft {
+  background: linear-gradient(180deg, #edf6fc, #fff);
+  color: #163b5b;
+  padding: 0;
+}
+.site-shell .footer-invitation {
+  isolation: isolate;
+  padding: 85px 24px 65px;
+  text-align: center;
+  position: relative;
+  border: 0;
+}
+.site-shell .footer-invitation p {
+  font: 500 clamp(44px, 6vw, 80px) var(--serif);
+  letter-spacing: -0.03em;
+}
+.site-shell .footer-invitation > span {
+  font: 13px var(--jp-serif);
+  letter-spacing: 0.13em;
+  display: block;
+  margin-top: 14px;
+}
+.site-shell .footer-invitation > a {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  border: 1px solid #91a8ba;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 23px;
+}
+.site-shell .footer-invitation:before,
+.site-shell .footer-invitation:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: 160px;
+  height: 160px;
+  background: url('img/winter/crystal.svg') center/contain no-repeat;
+}
+.site-shell .footer-invitation:before {
+  left: 6%;
+  top: 30px;
+}
+.site-shell .footer-invitation:after {
+  right: 8%;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(17deg);
+}
+.site-shell .ft__grid {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+}
+.site-shell .ft__menu a {
+  font: 25px var(--serif);
+  padding: 9px 0;
+}
+.site-shell .ft__menu small {
+  font: 9px var(--f-ja);
+  letter-spacing: 0.04em;
+}
+.site-shell .ft .label {
+  margin: 25px 0 15px;
+  color: #476f8b;
+}
+.site-shell .ft .label:first-child {
+  margin-top: 0;
+}
+.site-shell .ft .sns a,
+.site-shell .ft__lead {
+  font-size: 12px;
+}
+.site-shell .ft .blank-panel {
+  background: linear-gradient(140deg, #e0edf6, #f2f8fc);
+  box-shadow: inset 0 1px #fff;
+}
+.site-shell .ft__foot {
+  border: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 9px;
+}
+.site-shell .ft__foot .en {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+@media (max-width: 760px) {
+  .site-shell:not(.snow-lp) .subhead {
+    padding-top: 44px;
+  }
+  .site-shell .footer-invitation {
+    padding: 85px 15px 70px;
+  }
+  .site-shell .footer-invitation p {
+    font-size: 43px;
+  }
+  .site-shell .footer-invitation > span {
+    font-size: 11px;
+  }
+  .site-shell .footer-invitation > a {
+    position: static;
+    margin: 30px auto 0;
+    width: 36px;
+    height: 36px;
+  }
+  .site-shell .footer-invitation:before {
+    width: 85px;
+    height: 85px;
+    left: -18px;
+    top: 5px;
+  }
+  .site-shell .footer-invitation:after {
+    width: 65px;
+    height: 65px;
+    right: 5px;
+    bottom: 15px;
+  }
+  .site-shell .ft__grid {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .site-shell .ft__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+  }
+  .site-shell .ft__menu a {
+    font-size: 24px;
+    display: block;
+  }
+  .site-shell .ft__menu small {
+    display: block;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+  .site-shell .ft__foot {
+    font-size: 8px;
+    line-height: 2;
+    padding-bottom: 70px;
+  }
+  .site-shell .ft__foot .en {
+    font-size: 9px;
+  }
+}
+
+/* All action buttons share the same softly squared silhouette. */
+.site-shell
+  :is(
+    .btn,
+    .ask .btn,
+    .hd__cta,
+    .hero-link,
+    .fundlink,
+    .menu-toggle,
+    .motion-toggle,
+    .copylist button,
+    .gift__more button,
+    .footer-invitation > a
+  ) {
+  border-radius: var(--button-radius);
+}
+.site-shell .hero-link span {
+  border-radius: 0;
+  background: transparent;
+}

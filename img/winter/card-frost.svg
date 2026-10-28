@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="corner"><stop stop-color="#fff" stop-opacity=".95"/><stop offset=".32" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="rim" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".7"/><stop offset=".19" stop-color="#fff" stop-opacity="0"/><stop offset=".78" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".7"/></linearGradient>
+    <filter id="ice"><feTurbulence type="fractalNoise" baseFrequency=".48" numOctaves="3" seed="14"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 2.4 -1.1"/></filter>
+    <mask id="edge"><rect width="400" height="300" fill="url(#rim)"/><ellipse cx="0" cy="20" rx="125" ry="130" fill="url(#corner)"/><ellipse cx="400" cy="280" rx="155" ry="110" fill="url(#corner)"/></mask>
+    <g id="fern" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke-width=".8" d="M0 0L43 72M8 13L4 29M8 13L22 18M16 27L11 45M16 27L32 32M25 42L19 60M25 42L41 46M34 57L30 73M34 57L48 62"/>
+      <path stroke-width=".5" d="M4 29L0 34M4 29L10 33M11 45L5 50M11 45L16 50M19 60L13 64M19 60L24 66M22 18L25 13M22 18L28 24M32 32L37 27M32 32L37 38M41 46L47 42M41 46L45 52"/>
+    </g>
+  </defs>
+  <ellipse cx="0" cy="0" rx="110" ry="105" fill="url(#corner)" opacity=".6"/>
+  <ellipse cx="400" cy="300" rx="150" ry="130" fill="url(#corner)" opacity=".7"/>
+  <rect width="400" height="300" filter="url(#ice)" mask="url(#edge)" opacity=".6"/>
+  <g opacity=".55"><use href="#fern" transform="translate(2 2)"/><use href="#fern" transform="translate(21 -12) rotate(-30) scale(.65)"/><use href="#fern" transform="translate(399 300) rotate(180) scale(1.2)"/><use href="#fern" transform="translate(412 268) rotate(140) scale(.7)"/></g>
+</svg>
