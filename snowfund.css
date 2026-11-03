@@ -604,3 +604,8 @@
     max-width: 370px;
   }
 }
+
+/* 雪募金の注意事項（11/3 追加） */
+.fund-notes { margin-top: 1.5em; text-align: left; line-height: 1.8; }
+.fund-notes ul { margin: .4em 0 .6em; padding-left: 1.2em; }
+.fund-notes li { list-style: disc; margin: .2em 0; }
